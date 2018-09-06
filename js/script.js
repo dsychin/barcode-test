@@ -19,5 +19,6 @@ Quagga.init({
 Quagga.onDetected(function (data) {
     console.log('on detected');
     document.getElementById('result').innerHTML = data.codeResult.code;
+    console.log(data.codeResult.code);
     Quagga.stop();
 });

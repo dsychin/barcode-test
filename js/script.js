@@ -2,7 +2,11 @@ Quagga.init({
     inputStream: {
         name: "Live",
         type: "LiveStream",
-        target: document.querySelector('#targetElement')
+        target: document.querySelector('#targetElement'),
+        constraints: {
+            height: 300,
+            width: 300
+        }
     },
     decoder: {
         readers: ["code_39_reader"]
